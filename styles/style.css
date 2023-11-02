@@ -3,10 +3,17 @@
 /**************/
 /* naar een idee van Jen Simmons */
 @font-face{
-  font-family: Starwars;
-  src: ("")
+  font-family: 'Jedi';
+  src:url(/fonts/Starjedi.woff2) format(woff2);
 }
-
+@font-face{
+  font-family:'Starwars';
+  src:url(/fonts/Genova-Medium.woff2) format(woff2); 
+}
+@font-face{
+  font-family: 'Jedi_outline';
+  src:url(/fonts/Jedi_outline.woff2) format(woff2); 
+}
 *, *::after, *::before {
   box-sizing:border-box;  
   padding: 0;
@@ -20,7 +27,6 @@ button:not([disabled]) {
 img {
   max-width:100%;
 }
-
 
 /************/
 /* HET GRID */
@@ -42,7 +48,9 @@ body {
 h1 {
   grid-column-start: 1;
   grid-column-end: 4; 
-  background-color: #f80; 
+  background-color: rgb(90 90 90/ .70);
+  font-family: 'Jedi_outline'; 
+  text-align: center; 
 }
 
 ul{
@@ -109,9 +117,8 @@ section:nth-of-type(3){
 /*********************/
 
 :root {
-  --color-headings:crimson
+  --color-headings: #FFD700;
   /* ... */
-
 }
 
 
