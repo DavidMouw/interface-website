@@ -48,9 +48,13 @@ body {
 h1 {
   grid-column-start: 1;
   grid-column-end: 4; 
-  background-color: rgb(90 90 90/ .70);
-  font-family: 'Jedi_outline'; 
+  background-color: rgb(90 90 90/ .50);
+  font-family: "Jedi_outline"; 
   text-align: center; 
+}
+
+h2 {
+  font-family: "Starwars"; 
 }
 
 ul{
@@ -58,7 +62,7 @@ ul{
   grid-column-end: 2;
   grid-row-start: 2;
   grid-row-end: 4; 
-  background-color: rgb(90 90 90/ .70); 
+  background-color: rgb(90 90 90/ .50); 
   display: grid; 
   place-items: center;
 }
@@ -69,29 +73,36 @@ li{
 li button{
   aspect-ratio: 1;
   width: 6em;
-  background-color: red; 
-  border-radius: 100em; 
+  /* background-color: rgb(151, 151, 151); */
+  background: linear-gradient(transparent, transparent);
+  box-shadow: inset 0 0 2em rgba(0, 0, 0, 0.3); 
+  border-radius: 100em;
   display: grid; 
   place-items: center;
   margin: 0.3em; 
-  border: none; 
+  border: none;
+  transition: transform 0.5s; 
 
 }
 li button:hover{
-background-color:#f80;
-scale: 1.2;
+/* background-color:rgb(255, 215, 0);*/
+Scale: 1.2;
+background: linear-gradient(transparent, transparent);
+transform: rotate(360deg);
 transition: all 0.5s ease-in-out; 
-
 }
 
-/* ls section */
+/**********************/
+/* Lightsaber section */
+/**********************/
+
 section:nth-of-type(1){
   position: relative;
   grid-column-start: 2;
   grid-column-end: 3;
   grid-row-start: 2;
   grid-row-end: 4;
-  background-color:rgb(90 90 90/ .70); 
+  background-color:rgb(90 90 90/ .50); 
   display: flex; 
   align-items: end; 
 }
@@ -113,6 +124,11 @@ section:nth-of-type(1) .container img:nth-of-type(2){
   width: 220px;
   margin-top: -2px;
 }
+
+/**********************/
+/* Blauwe lichtzwaard (standaard) */
+/**********************/
+
 section:nth-of-type(1) div div{
   width: 1.3em;
   height: 27em;
@@ -123,6 +139,10 @@ section:nth-of-type(1) div div{
   box-shadow: 0 0 2em rgba(0, 201, 239, 0.90);
 }
 
+/**********************/
+/* Blauwe lichtzwaard */
+/**********************/
+
 section:nth-of-type(1) div div.blue{
   width: 1.3em;
   height: 27em;
@@ -132,6 +152,11 @@ section:nth-of-type(1) div div.blue{
   border-top-left-radius: 10em; 
   box-shadow: 0 0 2em rgba(0, 201, 239, 0.90);
 }
+
+/**********************/
+/* Groene lichtzwaard */
+/**********************/
+
 section:nth-of-type(1) div div.green{
   width: 1.3em;
   height: 27em;
@@ -139,8 +164,12 @@ section:nth-of-type(1) div div.green{
   border-radius: 20px 20px 0 0;
   border-top-right-radius: 10em;
   border-top-left-radius: 10em; 
-  box-shadow: 0 0 2em rgba(0, 201, 239, 0.90);
+  box-shadow: 0 0 2em rgba(10, 255, 48, 0.9);
 }
+
+/**********************/
+/* Gele lichtzwaard */
+/**********************/
 
 section:nth-of-type(1) div div.yellow{
   width: 1.3em;
@@ -149,8 +178,12 @@ section:nth-of-type(1) div div.yellow{
   border-radius: 20px 20px 0 0;
   border-top-right-radius: 10em;
   border-top-left-radius: 10em; 
-  box-shadow: 0 0 2em rgba(0, 201, 239, 0.90);
+  box-shadow: 0 0 2em rgba(255, 226, 67, 0.9);
 }
+
+/**********************/
+/* Paarse lichtzwaard */
+/**********************/
 
 section:nth-of-type(1) div div.purple{
   width: 1.3em;
@@ -159,8 +192,12 @@ section:nth-of-type(1) div div.purple{
   border-radius: 20px 20px 0 0;
   border-top-right-radius: 10em;
   border-top-left-radius: 10em; 
-  box-shadow: 0 0 2em rgba(0, 201, 239, 0.90);
+  box-shadow: 0 0 2em rgba(191, 34, 219, 0.9);
 }
+
+/**********************/
+/* Rode lichtzwaard */
+/**********************/
 
 section:nth-of-type(1) div div.red{
   width: 1.3em;
@@ -169,8 +206,12 @@ section:nth-of-type(1) div div.red{
   border-radius: 20px 20px 0 0;
   border-top-right-radius: 10em;
   border-top-left-radius: 10em; 
-  box-shadow: 0 0 2em rgba(0, 201, 239, 0.90);
+  box-shadow: 0 0 2em rgba(255, 31, 31, 0.9);
 }
+
+/**********************/
+/* Witte lichtzwaard */
+/**********************/
 
 section:nth-of-type(1) div div.white{
   width: 1.3em;
@@ -179,15 +220,12 @@ section:nth-of-type(1) div div.white{
   border-radius: 20px 20px 0 0;
   border-top-right-radius: 10em;
   border-top-left-radius: 10em; 
-  box-shadow: 0 0 2em rgba(0, 201, 239, 0.90);
+  box-shadow: 0 0 2em rgba(219, 219, 219, 0.9);
 }
 
-
-
-
-
 section:nth-of-type(2){
-  background-color: #ffffff; 
+  background-color: rgb(151, 151, 151);
+  background:linear-gradient(to bottom, rgb(204, 204, 204), rgb(51, 51, 51));
 }
 
 section:nth-of-type(3){
@@ -199,7 +237,7 @@ section:nth-of-type(3){
 /*********************/
 
 :root {
-  --color-headings: #FFD700;
+  --color-headings: rgb(255, 215, 0);
   /* ... */
 }
 
