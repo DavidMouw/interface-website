@@ -1,14 +1,13 @@
 // JavaScript Document
-console.log("Howdy!");
 
 var zwaardImage = document.querySelector("section:nth-of-type(1) div div"); 
 
-var blueButton = document.querySelector("ul li:nth-of-type(1)"); 
-var greenButton = document.querySelector("ul li:nth-of-type(2)"); 
-var yellowButton = document.querySelector("ul li:nth-of-type(3)");
-var purpleButton = document.querySelector("ul li:nth-of-type(4)"); 
-var redButton = document.querySelector("ul li:nth-of-type(5)"); 
-var whiteButton = document.querySelector("ul li:nth-of-type(6)"); 
+var blueButton = document.querySelector("ul li:nth-of-type(1) button"); 
+var greenButton = document.querySelector("ul li:nth-of-type(2) button"); 
+var yellowButton = document.querySelector("ul li:nth-of-type(3) button");
+var purpleButton = document.querySelector("ul li:nth-of-type(4) button"); 
+var redButton = document.querySelector("ul li:nth-of-type(5) button"); 
+var whiteButton = document.querySelector("ul li:nth-of-type(6) button"); 
 
 blueButton.onclick= blueOn;
 greenButton.onclick= greenOn;
@@ -23,33 +22,47 @@ whiteButton.onclick= whiteOn;
 
 function blueOn(){
     zwaardImage.className="";  
-    zwaardImage.classList.add("blue"); 
-    }
+    setTimeout(() => {
+        zwaardImage.classList.add("blue"); 
+    }, 100);
+}
 
 function greenOn(){
-zwaardImage.className="";  
-zwaardImage.classList.add("green"); 
+    zwaardImage.className="";  
+
+    setTimeout(() => {
+        zwaardImage.classList.add("green"); 
+    }, 100);
 }
 
 function yellowOn(){
-zwaardImage.className="";  
- zwaardImage.classList.add("yellow"); 
+    zwaardImage.className="";  
+
+    setTimeout(() => {
+        zwaardImage.classList.add("yellow"); 
+    }, 100);
  }
 
 function purpleOn(){
-zwaardImage.className="";  
-zwaardImage.classList.add("purple"); 
+    zwaardImage.className="";  
+    setTimeout(() => {
+        zwaardImage.classList.add("purple"); 
+    }, 100);
 }
 
 function redOn(){
- zwaardImage.className="";  
-zwaardImage.classList.add("red"); 
+    zwaardImage.className="";  
+    setTimeout(() => {
+        zwaardImage.classList.add("red"); 
+    }, 100);
 }
 
 function whiteOn(){
     zwaardImage.className="";  
-    zwaardImage.classList.add("white"); 
-    }
+    setTimeout(() => {
+        zwaardImage.classList.add("white"); 
+    }, 100);
+}
 
     
 

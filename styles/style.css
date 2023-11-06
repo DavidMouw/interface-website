@@ -114,10 +114,12 @@ section:nth-of-type(1){
   grid-row-start: 2;
   grid-row-end: 4;
   display: flex; 
-  align-items: end; 
+  align-items: end;
+  background-color: var(--background-color); 
+   
 }
 section:nth-of-type(1) .container{
-  background-color: var(--background-color); 
+  /* background-color: var(--background-color);  */
   display: flex;
   width: 100%;
   bottom: 3em;
@@ -144,53 +146,41 @@ section:nth-of-type(1) .container img:nth-of-type(2){
 section:nth-of-type(1) div div{
   width: 1.3em;
   height: 27em;
-  background-image: linear-gradient(to top, #00C9EF, #81F3FF);
   border-radius: 20px 20px 0 0;
   border-top-right-radius: 10em;
-  border-top-left-radius: 10em; 
-  box-shadow: 0 0 2em rgba(0, 201, 239, 0.90);
+  border-top-left-radius: 10em;
+
+  scale:1 0;
+  transform-origin: center bottom;
 }
+
+@keyframes slideUp{
+  from{
+     scale:1 0;
+   }
+   to{
+     scale:1 1;
+    }
+ }
 
 /**********************/
 /* Blauwe lichtzwaard */
 /**********************/
 
 section:nth-of-type(1) div div.blue{
-  width: 1.3em;
-  height: 27em;
   background-image: linear-gradient(to top, #00C9EF, #81F3FF);
-  border-radius: 20px 20px 0 0;
-  border-top-right-radius: 10em;
-  border-top-left-radius: 10em; 
   box-shadow: 0 0 2em rgba(0, 201, 239, 0.90);
-  clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0% 100%);
   animation: forwards slideUp 1.2s ease-out; 
 }
 
-@keyframes slideUp{
- from{
-    clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0% 100%);
-    box-shadow: 0 0 2em rgba(0, 201, 239, 0.90);
 
-  }
-  to{
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
-    box-shadow: 0 0 2em rgba(0, 201, 239, 0.90);
-    }
-}
 /**********************/
 /* Groene lichtzwaard */
 /**********************/
 
 section:nth-of-type(1) div div.green{
-  width: 1.3em;
-  height: 27em;
   background-image: linear-gradient(to top, #0AFF30, #A7FFA3);
-  border-radius: 20px 20px 0 0;
-  border-top-right-radius: 10em;
-  border-top-left-radius: 10em; 
   box-shadow: 0 0 2em rgba(10, 255, 48, 0.9);
-  clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0% 100%);
   animation: forwards slideUp 1.2s ease-out; 
 }
 
@@ -199,13 +189,9 @@ section:nth-of-type(1) div div.green{
 /**********************/
 
 section:nth-of-type(1) div div.yellow{
-  width: 1.3em;
-  height: 27em;
   background-image: linear-gradient(to top, #FFE243, #FAF697);
-  border-radius: 20px 20px 0 0;
-  border-top-right-radius: 10em;
-  border-top-left-radius: 10em; 
   box-shadow: 0 0 2em rgba(255, 226, 67, 0.9);
+  animation: forwards slideUp 1.2s ease-out; 
 }
 
 /**********************/
@@ -213,13 +199,9 @@ section:nth-of-type(1) div div.yellow{
 /**********************/
 
 section:nth-of-type(1) div div.purple{
-  width: 1.3em;
-  height: 27em;
   background-image: linear-gradient(to top, #BF22DB, #FF00FF);
-  border-radius: 20px 20px 0 0;
-  border-top-right-radius: 10em;
-  border-top-left-radius: 10em; 
   box-shadow: 0 0 2em rgba(191, 34, 219, 0.9);
+  animation: forwards slideUp 1.2s ease-out; 
 }
 
 /**********************/
@@ -227,13 +209,9 @@ section:nth-of-type(1) div div.purple{
 /**********************/
 
 section:nth-of-type(1) div div.red{
-  width: 1.3em;
-  height: 27em;
   background-image: linear-gradient(to top, #FF1F1F, #FF6767);
-  border-radius: 20px 20px 0 0;
-  border-top-right-radius: 10em;
-  border-top-left-radius: 10em; 
   box-shadow: 0 0 2em rgba(255, 31, 31, 0.9);
+  animation: forwards slideUp 1.2s ease-out; 
 }
 
 /**********************/
@@ -241,13 +219,9 @@ section:nth-of-type(1) div div.red{
 /**********************/
 
 section:nth-of-type(1) div div.white{
-  width: 1.3em;
-  height: 27em;
   background-image: linear-gradient(to top, #DBDBDB, #FFFFFF);
-  border-radius: 20px 20px 0 0;
-  border-top-right-radius: 10em;
-  border-top-left-radius: 10em; 
   box-shadow: 0 0 2em rgba(219, 219, 219, 0.9);
+  animation: forwards slideUp 1.2s ease-out; 
 }
 
 section:nth-of-type(2){
