@@ -23,17 +23,36 @@ whiteButton.onclick= whiteOn;
 /* Variabele voor tekstblokken */
 /****************************/
 
-
 var pHB = document.querySelector(".containerHB p");
 var pKJ = document.querySelector(".containerKJ p:nth-of-type(1) ");
 var pTwee = document.querySelector(".containerKJ p:nth-of-type(2)"); 
 var imgKJ = document.querySelector(".containerKJ img"); 
 
+imgKJ.onclick = musicHoofdpijn;
 
 
+
+var blokKJ = document.querySelector("section:nth-of-type(3)");
+  
 /*********************/
 /* functions */
 /*********************/
+
+function musicHoofdpijn(){
+  if (imgKJ.getAttribute("src") == "./images/star wars poster/A New Hope.png") {
+    var audioDarthVader = document.getElementById("darthVader");
+    console.log("Speelt geluid af van Darth Vader")
+    audioDarthVader.play(); 
+    // if (audioDarthVader.paused) {
+    //   audioDarthVader.play();
+    // } else {
+    //   audioDarthVader.pause();
+    // }
+
+  } else {
+    console.log("The image source is not 'A New Hope.png, dus speelt geen geluid af");
+  };
+}
 
 
 function blueOn(){
@@ -46,6 +65,7 @@ function blueOn(){
     pKJ.innerHTML = "De meest bekende Jedi-ridders met een blauw lichtzwaard zijn toch wel Anakin Skywalker en Obi-Wan Kenobi."
     pTwee.innerHTML = "Het blauwe lichtzwaard werd voor het eerst geïntroduceerd in de originele Star Wars-film, die later bekend werd als Star Wars: Episode IV - A New Hope. Dit was de allereerste film die in 1977 werd uitgebracht en geregisseerd door George Lucas. Het lichtzwaard werd gebruikt door Obi-Wan Kenobi."
     imgKJ.src = "./images/star wars poster/A New Hope.png"
+    blokKJ.style.background = "linear-gradient(to right, blue, yellow)"; 
   }
 
 function greenOn(){

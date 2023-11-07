@@ -245,7 +245,8 @@ section:nth-of-type(3){
   text-align: left;
   display: flex;
   justify-content: center;
-  align-items: center; 
+  align-items: center;
+  overflow-y: auto; 
 }
 
 .containerKJ{
@@ -256,11 +257,16 @@ section:nth-of-type(3){
   grid-template-rows: 1fr;
 }
 
+a{
+  text-decoration: none;
+  display: inline-block; 
+}
 .containerKJ img{
  grid-column-start: 2;
  grid-row-start: 1;
- /* max-width: 95%;
- max-height: 95%; */
+ scale: 1;
+ width: 80%;
+ justify-self: center; 
 }
 
 .containerKJ p, h2{
@@ -269,6 +275,9 @@ section:nth-of-type(3){
    
 }
 
+.containerKJ p:nth-of-type(2){
+  padding-bottom: 1em; 
+}
 p, h2 {
   padding-top: 0.3em;
 }
