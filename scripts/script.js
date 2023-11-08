@@ -65,7 +65,8 @@ function blueOn(){
     pKJ.innerHTML = "De meest bekende Jedi-ridders met een blauw lichtzwaard zijn toch wel Anakin Skywalker en Obi-Wan Kenobi."
     pTwee.innerHTML = "Het blauwe lichtzwaard werd voor het eerst geïntroduceerd in de originele Star Wars-film, die later bekend werd als Star Wars: Episode IV - A New Hope. Dit was de allereerste film die in 1977 werd uitgebracht en geregisseerd door George Lucas. Het lichtzwaard werd gebruikt door Obi-Wan Kenobi."
     imgKJ.src = "./images/star wars poster/A New Hope.png"
-    blokKJ.style.background = "linear-gradient(to right, blue, yellow)"; 
+    blokKJ.style.background = "radial-gradient(circle, #ADADAD, #00C9EF)";  
+    blokKJ.style.boxShadow = "inset 0 0 2em rgba(0, 0, 0, 0.8)";  
   }
 
 function greenOn(){
@@ -79,6 +80,8 @@ function greenOn(){
     pKJ.innerHTML = "De meest bekende Jedi-ridders met een groen lichtzwaard zijn Yoda, Luke Skywalker, Qui-Gon Jinn en Kit Fisto."
     pTwee.innerHTML = "Het Groene lichtzwaard werd voor het eerst geïntroduceerd in de originele Star Wars-film, die later bekend werd als Star Wars: Episode VI – Return of the Jedi. Dit was de film die in 1983 werd uitgebracht en geregisseerd door George Lucas. Het lichtzwaard werd gebruikt door Luke Skywalker."
     imgKJ.src = "./images/star wars poster/Return of the Jedi.png"
+    blokKJ.style.background = "radial-gradient(circle, #ADADAD, #0AFF30)";  
+    blokKJ.style.boxShadow = "inset 0 0 2em rgba(0, 0, 0, 0.8)"; 
 }
 
 function yellowOn(){
@@ -92,6 +95,8 @@ function yellowOn(){
     pKJ.innerHTML = "De Jedi-ridders die het meest bekend zijn die een geel lichtzwaard hanteerde zijn natuurlijk de tempelwachters, Ahsoka Tano nadat ze de Jedi-order had verlaten en Rey in The Rise of Skywalker."
     pTwee.innerHTML = "Het gele lichtzwaard werd voor het eerst geïntroduceerd in de officiële Star Wars serie Star wars The Clone Wars seizoen 5. Dit seizoen verscheen in 2012 en was geregisseerd door Dave Filoni. In dit seizoen werden er gele lichtzwaarden gebruikt door de Jedi tempelwachters."
     imgKJ.src = "./images/star wars poster/Star wars the clone Wars.png"
+    blokKJ.style.background = "radial-gradient(circle, #ADADAD, #FFE243)";  
+    blokKJ.style.boxShadow = "inset 0 0 2em rgba(0, 0, 0, 0.8)"; 
  }
 
 function purpleOn(){
@@ -104,6 +109,8 @@ function purpleOn(){
     pKJ.innerHTML = "De meest bekende Jedi-meester met een paars lichtzwaard is toch wel Mace Windu." 
     pTwee.innerHTML = "Het paarse lichtzwaard werd voor het eerst geïntroduceerd in de originele Star Wars-film, die later bekend werd als Star Wars: Episode II Attack of the Clones. Dit was de film die in 2002 werd uitgebracht en geregisseerd door George Lucas. Het lichtzwaard werd gebruikt door Jedi Mace Windu."
     imgKJ.src = "./images/star wars poster/Attack of the Clones.png"
+    blokKJ.style.background = "radial-gradient(circle, #ADADAD, #BF22DB)";  
+    blokKJ.style.boxShadow = "inset 0 0 2em rgba(0, 0, 0, 0.8)"; 
 }
 
 function redOn(){
@@ -116,6 +123,8 @@ function redOn(){
     pKJ.innerHTML = "De meest bekende Sith-lords die een rood lichtzwaard gebruiken zijn Darth Vader, Darth Sidious, Darth Maul en Count Dooku."
     pTwee.innerHTML = "Het rode lichtzwaard werd voor het eerst geïntroduceerd in de originele Star Wars-film, die later bekend werd als Star Wars: Episode IV A New Hope. Dit was de film die in 1977 werd uitgebracht en geregisseerd door George Lucas. Het lichtzwaard werd gebruikt door Darth Vader (vroeger Anakin Skywalker)."
     imgKJ.src = "./images/star wars poster/A New Hope.png"
+    blokKJ.style.background = "radial-gradient(circle, #ADADAD, #FF1F1F)";  
+    blokKJ.style.boxShadow = "inset 0 0 2em rgba(0, 0, 0, 0.8)"; 
 }
 
 function whiteOn(){
@@ -128,6 +137,8 @@ function whiteOn(){
     pKJ.innerHTML = "De meest bekende zwaardmeester die een wit lichtzwaard hanteert is Ahsoka Tano. Zij heeft haar oude lichtzwaarden ingeleverd toen ze de Jedi-order verliet."
     pTwee.innerHTML = "Het witte lichtzwaard werd voor het eerst geïntroduceerd in de originele Star Wars serie, die later bekend werd als Star Wars Rebels. Dit was een serie die in 2014 werd uitgebracht en geregisseerd door Lucasfilm Animation. Het lichtzwaard werd gebruikt door Ahsoka Tano die in deze serie een terugkeer maakte."
     imgKJ.src = "./images/star wars poster/Star Wars Rebels.png"
+    blokKJ.style.background = "radial-gradient(circle, #ADADAD, #DBDBDB)";  
+    blokKJ.style.boxShadow = "inset 0 0 2em rgba(0, 0, 0, 0.8)"; 
 }
 
 
