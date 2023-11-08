@@ -4,21 +4,21 @@
 
 @font-face{
   font-family:'Starwars';
-  src:url(/fonts/Genova-Medium.woff2) format(woff2); 
+  src:url(../fonts/Genova-Medium.woff2) format(woff2); 
 }
 @font-face{
   font-family: 'Jedi_outline';
-  src:url(/fonts/Jedi_outline.woff2) format(woff2); 
+  src:url(../fonts/Jedi_outline.woff2) format(woff2); 
 }
 
 @font-face{
   font-family: 'Fictie_Starwars';
-  src:url(/fonts/Starwarsfictie\ Bold\ Italic.woff2); 
+  src:url(../fonts/Starwarsfictie\ Bold\ Italic.woff2); 
 }
 
 @font-face{
   font-family: 'Tekst_Starwars';
-  src:url(/fonts/Starwarsinformatie.woff2); 
+  src:url(../fonts/Starwarsinformatie.woff2); 
 }
 
 /*********************/
@@ -52,7 +52,7 @@ body {
   margin:0;
   height: 100vh; 
 
-  background-image: url("/images/background\ image.jpg");
+  background-image: url("../images/background\ image.jpg");
   background-size: cover; 
   background-repeat: no-repeat; 
 
@@ -60,7 +60,7 @@ body {
   grid-template-columns: 20% 1fr 1fr; 
   /* grid-template-rows: max-content 1fr 1fr; */
   grid-template-rows: 8% 46% 46%;
-  cursor: url("/Cursor/Jedi_Wit.png"), pointer; 
+  cursor: url("../Cursor/Jedi_Wit.png"), pointer; 
   
   }
 
@@ -316,11 +316,11 @@ h1 {
 }
 
 button {
-  cursor: url("/Cursor/Jedi_Geel.png"), pointer; 
+  cursor: url("../Cursor/Jedi_Geel.png"), pointer; 
 }
 
 ul li:nth-child(5) button {
-  cursor: url("/Cursor/Sith_Rood.png"), pointer;
+  cursor: url("../Cursor/Sith_Rood.png"), pointer;
 }
 
 

@@ -39,7 +39,7 @@ var blokKJ = document.querySelector("section:nth-of-type(3)");
 /*********************/
 
 function musicHoofdpijn(){
-  if (imgKJ.getAttribute("src") == "./images/star wars poster/A New Hope.png") {
+  if (imgKJ.getAttribute("src") == "../images/star wars poster/A New Hope.png") {
     var audioDarthVader = document.getElementById("darthVader");
     console.log("Speelt geluid af van Darth Vader")
     audioDarthVader.play(); 
