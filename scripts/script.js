@@ -1,6 +1,6 @@
 
 /****************************/
-/* Variabele voor Lichtzwaarden */
+/* #Variabele voor Lichtzwaarden */
 /****************************/
 
 
@@ -20,7 +20,7 @@ redButton.onclick= redOn;
 whiteButton.onclick= whiteOn;
 
 /****************************/
-/* Variabele voor tekstblokken */
+/* #Variabele voor tekstblokken */
 /****************************/
 
 var pHB = document.querySelector(".containerHB p");
@@ -28,31 +28,31 @@ var pKJ = document.querySelector(".containerKJ p:nth-of-type(1) ");
 var pTwee = document.querySelector(".containerKJ p:nth-of-type(2)"); 
 var imgKJ = document.querySelector(".containerKJ img"); 
 
+/* Darth Vader Breathe effect wanneer er op poster wordt geklikt*/
 imgKJ.onclick = musicHoofdpijn;
 
-
+/**************************************************/
+/* #Variabele voor achtergrond onderste tekstblok */
+/**************************************************/
 
 var blokKJ = document.querySelector("section:nth-of-type(3)");
-  
+ 
 /*********************/
 /* functions */
 /*********************/
 
+/* Darth Vader Breathe effect function*/
 function musicHoofdpijn(){
   if (imgKJ.getAttribute("src") == "./images/star wars poster/A New Hope.png") {
     var audioDarthVader = document.getElementById("darthVader");
     console.log("Speelt geluid af van Darth Vader")
     audioDarthVader.play(); 
-    // if (audioDarthVader.paused) {
-    //   audioDarthVader.play();
-    // } else {
-    //   audioDarthVader.pause();
-    // }
-
   } else {
     console.log("The image source is not 'A New Hope.png, dus speelt geen geluid af");
   };
 }
+
+/* Lichtzwaarden functions*/
 
 
 function blueOn(){
@@ -60,6 +60,7 @@ function blueOn(){
     setTimeout(() => {
         zwaardImage.classList.add("blue"); 
     }, 100);
+
 
     pHB.innerHTML = "Een blauw lichtzwaard is de meest voorkomende lichtzwaard kleur. Dit lichtzwaard wordt gemaakt van een blauw kyber-kristal. Deze kristal werd vaak gevonden op de planeet Ilum. Blauw wordt vaak geassocieerd met de zogenoemde Jedi-ridders. De kleur staat symbool voor rust, kalmte en loyaliteit. Jedi-ridders die een blauw lichtzwaard hebben streven vaak naar de verdediging van de waarheid. Zij zijn vastberaden, gedisciplineerd en hanteren de Jedi-code enorm."
     pKJ.innerHTML = "De meest bekende Jedi-ridders met een blauw lichtzwaard zijn toch wel Anakin Skywalker en Obi-Wan Kenobi."
@@ -69,12 +70,13 @@ function blueOn(){
     blokKJ.style.boxShadow = "inset 0 0 2em rgba(0, 0, 0, 0.8)";  
   }
 
+
 function greenOn(){
     zwaardImage.className="";  
-
     setTimeout(() => {
         zwaardImage.classList.add("green"); 
     }, 100);
+
 
     pHB.innerHTML = "Een groen lichtzwaard wordt vaak geassocieerd met Jedi-ridders die een sterke verbinding hebben met de Force. Het lichtzwaard wordt gemaakt van een groen kyberkristal. Net als het blauwe kristal worden ze vaak gevonden op de planeet Ilum. Zij staan symbool voor evenwicht en harmonie. Jedi die het groene lichtzwaard gebruiken, streven naar balans in de Force. Deze Jedi-ridders richten zich op de Force en de harmonie met de natuur. Ze zijn vaak bedacht en wijs in hun handelingen."
     pKJ.innerHTML = "De meest bekende Jedi-ridders met een groen lichtzwaard zijn Yoda, Luke Skywalker, Qui-Gon Jinn en Kit Fisto."
@@ -84,12 +86,13 @@ function greenOn(){
     blokKJ.style.boxShadow = "inset 0 0 2em rgba(0, 0, 0, 0.8)"; 
 }
 
+
 function yellowOn(){
     zwaardImage.className="";  
-
     setTimeout(() => {
         zwaardImage.classList.add("yellow"); 
     }, 100);
+
 
     pHB.innerHTML = "Een geel lichtzwaard is één van de zeldzame kleuren. De gele kleur wordt vaak geassocieerd met Jedi-tempelwachters en symboliseert opoffering en bescherming. De gele kleur staat symbool voor kennis en nederigheid. Het gele lichtzwaard wordt gemaakt door een geel kyberkristal. Dit kristal is niet te vinden op de planeet Ilum, maar staat voor de spirituele reis van de Jedi. Jedi-ridders met een geel lichtzwaard hebben een sterke band met de order en de waarden die zij vertegenwoordigen."
     pKJ.innerHTML = "De Jedi-ridders die het meest bekend zijn die een geel lichtzwaard hanteerde zijn natuurlijk de tempelwachters, Ahsoka Tano nadat ze de Jedi-order had verlaten en Rey in The Rise of Skywalker."
@@ -99,11 +102,13 @@ function yellowOn(){
     blokKJ.style.boxShadow = "inset 0 0 2em rgba(0, 0, 0, 0.8)"; 
  }
 
+
 function purpleOn(){
     zwaardImage.className="";  
     setTimeout(() => {
         zwaardImage.classList.add("purple"); 
     }, 100);
+
 
     pHB.innerHTML = "Een paars lichtzwaard wordt vaak geassocieerd met unieke Jedi-meesters die zich niet aan de regels houden. Het lichtzwaard wordt gemaakt van een paars kyberkristal. In de films of canon wordt niet specifiek genoemd waar de paarse kyberkristal vandaan komt. Jedi met een paars lichtzwaard hebben vaak een onconventionele benadering van de Force en zijn bereid om grenzen te overschrijden om hun doel te bereiken."
     pKJ.innerHTML = "De meest bekende Jedi-meester met een paars lichtzwaard is toch wel Mace Windu." 
@@ -113,11 +118,13 @@ function purpleOn(){
     blokKJ.style.boxShadow = "inset 0 0 2em rgba(0, 0, 0, 0.8)"; 
 }
 
+
 function redOn(){
     zwaardImage.className="";  
     setTimeout(() => {
         zwaardImage.classList.add("red"); 
     }, 100);
+
 
     pHB.innerHTML = "Een rood lichtzwaard wordt gebruikt door de Sith en staat symbool voor haat, woede, agressie en macht. De Sith-lords die een rood lichtzwaard gebruiken zijn bereid om er alles aan te doen om hun doel te bereiken. De Sith kan geen band vormen met de kyberkristallen. Daarom moet de Sith de kristallen laten bloeden om de kristallen naar hen wil te buigen."
     pKJ.innerHTML = "De meest bekende Sith-lords die een rood lichtzwaard gebruiken zijn Darth Vader, Darth Sidious, Darth Maul en Count Dooku."
@@ -127,11 +134,13 @@ function redOn(){
     blokKJ.style.boxShadow = "inset 0 0 2em rgba(0, 0, 0, 0.8)"; 
 }
 
+
 function whiteOn(){
     zwaardImage.className="";  
     setTimeout(() => {
         zwaardImage.classList.add("white"); 
     }, 100);
+
 
     pHB.innerHTML = "Het witte lichtzwaard wordt vaak geassocieerd met unieke Jedi-meesters die hun pad hebben verlaten voor een nieuw begin. De witte kleur staat symbool voor vernieuwing en zuivering. Hetzelfde als dat er geen rood kyberkristal natuurlijk kan worden gevonden, is dat met een wit kyberkristal ook. Het zuiveringsproces is symbolisch en diepgaand, waarbij de Jedi zich toewijdt aan de lichte kant van de Force en de duisternis in zichzelf overwint. Dit proces vereist diepgaande meditatie, reflectie en spirituele groei. Het resulterende witte lichtzwaard symboliseert vaak een Jedi die in evenwicht is, vrij van conflicten en gewijd aan vrede en rechtvaardigheid."
     pKJ.innerHTML = "De meest bekende zwaardmeester die een wit lichtzwaard hanteert is Ahsoka Tano. Zij heeft haar oude lichtzwaarden ingeleverd toen ze de Jedi-order verliet."
@@ -143,10 +152,10 @@ function whiteOn(){
 
 
 /****************************/
-/* Variabele voor geluidbestand */
+/* #Variabele voor geluidbestand */
 /****************************/
 
-// muziekButton.onclick = lightsaberSound;              //*WAAROM WERKT DEZE CODE NIET*// 
+// muziekButton.onclick = lightsaberSound;              //*WAAROM WERKT DEZE CODE NIET (.onclick)*// 
 // function lightsaberSound(){
 //     if (geluid.play){
 //     }
@@ -154,8 +163,6 @@ function whiteOn(){
 //     }
 // }
     
-
-
 var musicButtonBlue = document.querySelector("ul li:nth-of-type(1) button");
 var soundBlue = document.querySelector("ul li:nth-of-type(1) audio");
 
@@ -175,14 +182,12 @@ var musicButtonWhite = document.querySelector("ul li:nth-of-type(6) button");
 var soundWhite = document.querySelector("ul li:nth-of-type(6) audio");
 
 
-
 musicButtonBlue.addEventListener('click', lightsaberBlue);
 musicButtonGreen.addEventListener('click', lightsaberGreen);
 musicButtonYellow.addEventListener('click', lightsaberYellow); 
 musicButtonPurple.addEventListener('click', lightsaberPurple); 
 musicButtonRed.addEventListener('click', lightsaberRed); 
 musicButtonWhite.addEventListener('click', lightsaberWhite); 
-
 
 
 function lightsaberBlue() {
@@ -193,6 +198,7 @@ function lightsaberBlue() {
     }
   }
 
+
 function lightsaberGreen() {
     if (soundGreen.paused) {
       soundGreen.play();
@@ -200,6 +206,7 @@ function lightsaberGreen() {
       soundGreen.pause();
     }
   }
+
 
 function lightsaberYellow() {
     if (soundYellow.paused) {
@@ -209,6 +216,7 @@ function lightsaberYellow() {
     }
   }
 
+
 function lightsaberPurple() {
     if (soundPurple.paused) {
       soundPurple.play();
@@ -216,6 +224,7 @@ function lightsaberPurple() {
       soundPurple.pause();
     }
   }
+
 
 function lightsaberRed() {
     if (soundRed.paused) {
@@ -225,6 +234,7 @@ function lightsaberRed() {
     }
   }
 
+  
 function lightsaberWhite() {
     if (soundWhite.paused) {
       soundWhite.play();

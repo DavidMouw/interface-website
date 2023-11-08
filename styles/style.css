@@ -1,37 +1,41 @@
 /**************/
-/* CSS REMEDY */
+/* #CSS FONTFACES */
 /**************/
 
 @font-face{
   font-family:'Starwars';
   src:url(../fonts/Genova-Medium.woff2) format(woff2); 
 }
+
+
 @font-face{
   font-family: 'Jedi_outline';
   src:url(../fonts/Jedi_outline.woff2) format(woff2); 
 }
+
 
 @font-face{
   font-family: 'Fictie_Starwars';
   src:url(../fonts/Starwarsfictie\ Bold\ Italic.woff2); 
 }
 
+
 @font-face{
   font-family: 'Tekst_Starwars';
   src:url(../fonts/Starwarsinformatie.woff2); 
 }
 
+
 /*********************/
-/* CUSTOM PROPERTIES */
+/* #CUSTOM PROPERTIES */
 /*********************/
 
 :root {
   --color-headings: rgba(255, 215, 0);
   --background-color: rgba(90 90 90/ .50); 
-  --information-text: rgba(255, 255, 255); 
-  
-  /* ... */
+  --information-text: rgba(255, 255, 255);  
 }
+
 
 *, *::after, *::before {
   box-sizing:border-box;  
@@ -40,29 +44,23 @@
 }
 
 
-img {
-  max-width:100%;
-}
-
 /************/
-/* HET GRID */
+/* #HET GRID */
 /************/
 
 body {
   margin:0;
   height: 100vh; 
-
   background-image: url("../images/background_image.jpg");
   background-size: cover; 
   background-repeat: no-repeat; 
-
   display: grid;
   grid-template-columns: 20% 1fr 1fr; 
-  /* grid-template-rows: max-content 1fr 1fr; */
   grid-template-rows: 8% 46% 46%;
-  cursor: url("../Cursor/Jedi_Wit.png"), pointer; 
-  
-  }
+  cursor: url("../Cursor/Jedi_Wit.png"), pointer;   
+}
+
+
 
 h1 {
   grid-column-start: 1;
@@ -73,20 +71,21 @@ h1 {
 }
 
 
-
 ul{
   grid-column-start: 1;
   grid-column-end: 2;
   grid-row-start: 2;
   grid-row-end: 4;
   background-color: var(--background-color); 
-  /* background-color: rgb(90 90 90/ .50);  */
   display: grid; 
   place-items: center;
 }
+
+
 li{
   list-style: none; 
 }
+
 
 li button{
   aspect-ratio: 1;
@@ -100,8 +99,9 @@ li button{
   margin: 0.3em; 
   border: none;
   transition: transform 0.5s; 
-
 }
+
+
 li button:hover{
 Scale: 1.2;
 background: linear-gradient(transparent, transparent);
@@ -109,8 +109,9 @@ transform: rotate(360deg);
 transition: all 0.5s ease-in-out; 
 }
 
+
 /**********************/
-/* Lightsaber section */
+/* #Lightsaber section */
 /**********************/
 
 section:nth-of-type(1){
@@ -124,8 +125,9 @@ section:nth-of-type(1){
   background-color: var(--background-color); 
    
 }
+
+
 section:nth-of-type(1) .container{
-  /* background-color: var(--background-color);  */
   display: flex;
   width: 100%;
   bottom: 3em;
@@ -133,18 +135,21 @@ section:nth-of-type(1) .container{
   align-items: center;  
 }
 
+
 section:nth-of-type(1) .container img{
   width: 100px;
   margin-top: -2em;
 }
+
 
 section:nth-of-type(1) .container img:nth-of-type(2){
   width: 220px;
   margin-top: -2em;
 }
 
+
 /**********************/
-/* Blauwe lichtzwaard (standaard) */
+/* #lightsaber(standaard) */
 /**********************/
 
 section:nth-of-type(1) div div{
@@ -158,6 +163,7 @@ section:nth-of-type(1) div div{
   transform-origin: center bottom;
 }
 
+
 @keyframes slideUp{
   from{
      scale:1 0;
@@ -166,6 +172,7 @@ section:nth-of-type(1) div div{
      scale:1 1;
     }
  }
+
 
 /**********************/
 /* Blauwe lichtzwaard */
@@ -188,6 +195,7 @@ section:nth-of-type(1) div div.green{
   animation: forwards slideUp 1.2s ease-out; 
 }
 
+
 /**********************/
 /* Gele lichtzwaard */
 /**********************/
@@ -197,6 +205,7 @@ section:nth-of-type(1) div div.yellow{
   box-shadow: 0 0 2em rgba(255, 226, 67, 0.9);
   animation: forwards slideUp 1.2s ease-out; 
 }
+
 
 /**********************/
 /* Paarse lichtzwaard */
@@ -208,6 +217,7 @@ section:nth-of-type(1) div div.purple{
   animation: forwards slideUp 1.2s ease-out; 
 }
 
+
 /**********************/
 /* Rode lichtzwaard */
 /**********************/
@@ -217,6 +227,7 @@ section:nth-of-type(1) div div.red{
   box-shadow: 0 0 2em rgba(255, 31, 31, 0.9);
   animation: forwards slideUp 1.2s ease-out; 
 }
+
 
 /**********************/
 /* Witte lichtzwaard */
@@ -229,11 +240,11 @@ section:nth-of-type(1) div div.white{
 }
 
 
-
+/***********************************/
+/* #Tekstblok Herkomst en Betekenis */
+/***********************************/
 
 section:nth-of-type(2){
-  /* background-image:url(../images/Test/test\ 1.png); */
-  /* background:linear-gradient(to bottom, rgb(204, 204, 204), rgb(51, 51, 51)); */
   background: linear-gradient(45deg, rgb(119, 119, 119), rgb(170, 170, 170));
   box-shadow: inset 0 0 2em rgba(0, 0, 0, 0.8); 
   display: flex;
@@ -241,13 +252,16 @@ section:nth-of-type(2){
   align-items: center;  
 }
 
+
 .containerHB{
   width: 90%; 
   height: 90%;
 }
 
 
-
+/***********************************/
+/* #Tekstblok Karakter & Jaaruitgave */
+/***********************************/
 
 section:nth-of-type(3){
   background: linear-gradient(45deg, rgb(119, 119, 119), rgb(170, 170, 170));  text-align: left;
@@ -258,6 +272,13 @@ section:nth-of-type(3){
   overflow-y: auto; 
 }
 
+
+a{
+  text-decoration: none;
+  display: inline-block; 
+}
+
+
 .containerKJ{
   width: 90%;
   height: 90%;
@@ -266,10 +287,7 @@ section:nth-of-type(3){
   grid-template-rows: 1fr;
 }
 
-a{
-  text-decoration: none;
-  display: inline-block; 
-}
+
 .containerKJ img{
  grid-column-start: 2;
  grid-row-start: 1;
@@ -278,15 +296,41 @@ a{
  justify-self: center; 
 }
 
+
 .containerKJ p, h2{
   grid-column-start: 1;
-  grid-row-start: 1;
-   
+  grid-row-start: 1;  
 }
+
 
 .containerKJ p:nth-of-type(2){
   padding-bottom: 1em; 
 }
+
+
+/********************/
+/* #ALGEMENE STYLING */
+/********************/
+
+p {
+  color: var(--information-text); 
+  font-family: 'Tekst_Starwars';
+  font-size:0.8em;
+  line-height: 1.3;
+  padding-top: 0.2em;   
+}
+
+
+h1 {
+  color:var(--color-headings);
+}
+
+
+h1:hover{
+  font-family: 'Fictie_Starwars';
+  padding-top: 0.5em; 
+}
+
 
 h2 {
   font-family: 'Starwars'; 
@@ -294,33 +338,24 @@ h2 {
   color: var(--information-text); 
 }
 
-p {
-  color: var(--information-text); 
-  font-family: 'Tekst_Starwars';
-  font-size:0.8em;
-  line-height: 1.3;
-  padding-top: 0.2em;
-   
-}
-
-section img{
-  scale: 0.8;
-}
-
-/********************/
-/* ALGEMENE STYLING */
-/********************/
-
-h1 {
-  color:var(--color-headings);
-}
 
 button {
   cursor: url("../Cursor/Jedi_Geel.png"), pointer; 
 }
 
+
 ul li:nth-child(5) button {
   cursor: url("../Cursor/Sith_Rood.png"), pointer;
+}
+
+
+img {
+  max-width:100%;
+}
+
+
+section img{
+  scale: 0.8;
 }
 
 
